@@ -1,0 +1,28 @@
+{
+    "comments": {
+        "1": {
+            "name": "harkishen",
+            "message": "what a blog",
+            "id": 1,
+            "upvotes": 5,
+            "downvotes": 1,
+            "time": "1:15:30 4/9/2019"
+        },
+        "2": {
+            "name": "harkishen",
+            "message": "what a blog",
+            "id": 2,
+            "upvotes": 11,
+            "downvotes": 1,
+            "time": "1:15:37 4/9/2019"
+        },
+        "3": {
+            "name": "Muskan Khdeia",
+            "message": "omdfuhdui fgs udfhiud hfgijdfhgiu fh",
+            "id": 3,
+            "upvotes": 3,
+            "downvotes": 3,
+            "time": "1:31:15 4/9/2019"
+        }
+    }
+}
