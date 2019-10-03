@@ -1,0 +1,16 @@
+{
+  "name": "rentomojo",
+  "version": "1.0.0",
+  "description": "sample application for round 1 rentomojo intern",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ui/"
+  },
+  "keywords": [
+    "rentomojo",
+    "mean"
+  ],
+  "author": "harkishen-singh",
+  "license": "ISC"
+}
