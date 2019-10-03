@@ -18,10 +18,10 @@ app.config(function($routeProvider) {
 
 app.controller('comments-controller', function($scope,$location,$rootScope,$http) {
 	$scope.comment = '';
-
+	$scope.name = '';
 	$scope.submitComment = function() {
 		console.log('comment is ', $scope.comment, ' ', $scope.name);
-		if ($scope.comment.length !== 0) {
+		if ($scope.comment.length !== 0 && $scope.name.length !== 0) {
 			let date = new Date();
 			let time = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear();
 			time = date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds() + ' ' + time;
@@ -41,7 +41,7 @@ app.controller('comments-controller', function($scope,$location,$rootScope,$http
 				$scope.comments = res;
 			});
 		} else {
-			alert('please write a comment');
+			alert('Name or Comment field is empty.');
 		}
 	};
 
