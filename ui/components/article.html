@@ -1,1 +1,17 @@
-this is an article
+<div class="article">
+    <div class="content">
+        One of the contributions Google is working on for the upstream Linux kernel is a new "sanitizer". Over the years Google has worked on 
+        AddressSanitizer for finding memory corruption bugs, UndefinedBehaviorSanitizer for undefined behavior within code, and other sanitizers. 
+        The Linux kernel has been exposed to this as well as other open-source projects while their newest sanitizer is KCSAN and focused as a 
+        Kernel Concurrency Sanitizer.
+    
+        The Kernel Concurrency Sanitizer (KCSAN) is focused on discovering data-race issues within the kernel code. This dynamic data-race detector 
+        is an alternative to the Kernel Thread Sanitizer.
+    
+        In their testing just last month, in two days they found over 300 unique data race conditions within the mainline kernel.
+    
+        There was a recent discussion about the Kernel Concurrency Sanitizer on the LKML. For those wanting to learn more, the code at least for
+        now is being hosted on GitHub.
+    </div>
+    <div data-ng-include="'components/comment.html'"></div>
+</div>
