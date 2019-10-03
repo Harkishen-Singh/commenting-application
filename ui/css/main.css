@@ -66,7 +66,7 @@ footer {
 }
 
 .outer-component {
-  margin: 3% 30% 3% 15%;
+  margin: 3% 30% 3% 10%;
   border: 1px solid pink;
   padding: 3%;
   border-radius: 5px;
@@ -75,14 +75,37 @@ footer {
 }
 
 .article {
-  overflow-y: scroll;
-  height: 200vh;
+  /* overflow-y: scroll; */
+  height: 100vh;
 }
 
 textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-
+  padding: 3%;
+  border-radius: 5px;
   width: 100%;
+}
+
+.renderer {
+  display: inline-flex;
+  border-bottom: 2px solid pink;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+  width: 100%;
+}
+
+.post-comm {
+  margin: 3% 3% 3% 80%;
+}
+
+.name-style {
+  border-radius: 5px;
+}
+
+.repeat-div-cont {
+  margin-bottom: 1%;
+  border-bottom: 2px solid pink;
+  padding-bottom: 1%;
 }

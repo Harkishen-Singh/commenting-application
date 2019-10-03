@@ -1,37 +1,31 @@
 <div class="outer-component" data-ng-init="getComments();">
     <form>
-        Name: <input type="text" placeholder="Name" style="border-radius: 5px;" data-ng-model="$parent.name"> <br> <br>
+        Name: <input type="text" placeholder="Name" class="name-style" data-ng-model="$parent.name"> <br> <br>
         <textarea
             name=""
             id=""
             cols="65"
             rows="5"
             placeholder="Type a comment ..."
-            style="padding: 3%;border-radius: 5px;"
             data-ng-model="$parent.comment"
         >
         </textarea>
         <br>
         <button
-            class="btn btn-danger" type="submit" style="margin-top: 3%; margin-right: 3%; margin-left: 80%;"
+            class="btn btn-danger post-comm" type="submit"
             data-ng-click="submitComment();"
         >
             Post comment
         </button>
         <div data-ng-if="comments.length !== 0">
-            <!-- <div data-ng-repeat="inst in comments;">
-                commnet: {{ inst['message'] }} <br>
-                upvote: {{ inst['upvotes'] }} <button data-ng-click="upvoteComment(inst['id']);">vote</button> <br>
-                downvote: {{ inst['downvotes'] }} <button data-ng-click="downvoteComment(inst['id']);">vote</button> <br>
-            </div> -->
-            <div data-ng-repeat="inst in comments;">
-                <div style="display: inline-flex; width: 100%;">
-                    <div>
-                        <b>{{ $index + 1 }}.</b> <span> {{ inst['name'] }} </span>  <span style="font-size: 11px;">commented at {{ inst['time'] }} </span>
-                        <br>
-                        <span style="margin-left: 3%; font-size: 12px;"> {{ inst['message'] }} </span>
+            <div data-ng-repeat="inst in comments;" class="repeat-div-con">
+                <div class="renderer row">
+                    <div class="col-md-10">
+                        <b>{{ $index + 1 }}.</b> <span style=" font-size: 12px;""> {{ inst['name'] }} </span>  <span style="font-size: 11px;">commented at {{ inst['time'] }} </span>
+                        <br><br>
+                        <div style="margin-left: 3%;"> {{ inst['message'] }} </div>
                     </div>
-                    <div class="float-right">
+                    <div class="col-md-2">
                         <img src="../img/thumbsUP.png" alt="" style="height: 25px;" srcset="" data-ng-click="upvoteComment(inst['id']);"> <span style="font-size: 11px;"> {{ inst['upvotes'] }} </span> <br>
                         <img src="../img/thumbsDOWN.png" alt="" style="height: 25px;" srcset="" data-ng-click="downvoteComment(inst['id']);"> <span style="font-size: 11px;"> {{ inst['downvotes'] }} </span> <br>
                     </div>
