@@ -1,17 +1,22 @@
 <div class="article">
     <div class="content">
-        One of the contributions Google is working on for the upstream Linux kernel is a new "sanitizer". Over the years Google has worked on 
-        AddressSanitizer for finding memory corruption bugs, UndefinedBehaviorSanitizer for undefined behavior within code, and other sanitizers. 
-        The Linux kernel has been exposed to this as well as other open-source projects while their newest sanitizer is KCSAN and focused as a 
-        Kernel Concurrency Sanitizer.
-    
-        The Kernel Concurrency Sanitizer (KCSAN) is focused on discovering data-race issues within the kernel code. This dynamic data-race detector 
-        is an alternative to the Kernel Thread Sanitizer.
-    
-        In their testing just last month, in two days they found over 300 unique data race conditions within the mainline kernel.
-    
-        There was a recent discussion about the Kernel Concurrency Sanitizer on the LKML. For those wanting to learn more, the code at least for
-        now is being hosted on GitHub.
+        <h3>Parsing C++ is literally undecidable</h3>
+        <span style="color: #958282;">August 24, 2013</span> <hr>
+        Many programmers are aware that C++ templates are Turing-complete, and this was proved in the 2003 paper C++
+        Templates are Turing Complete.
+
+        However, there is an even stronger result that many people are not aware of. The C++ FQA has a section
+        showing that parsing C++ is undecidable, but many people have misinterpreted the full implications of this
+        (understandable, since the FQA is discussing several issues over the course of its questions and does not make
+        explicit the undecidability proof). <br> <br>
+        
+        For example, see this (incorrect, but top-voted) Stack Overflow answer to the question What do people mean when they
+        say C++ has “undecidable grammar”? This answer errs when it says: “Note this has nothing to do with the ambiguity of the C++ grammar.”
+        <br> <br>
+        In fact, simply producing a parse tree for a C++ program is undecidable, because producing a parse tree can require
+        arbitrary template instantiation. I will demonstrate this with a short program, which is a simplification/adaptation of
+        what is in the FQA link above.
     </div>
+    <span class="content"><b>Discussions</b></span>
     <div data-ng-include="'components/comment.html'"></div>
 </div>

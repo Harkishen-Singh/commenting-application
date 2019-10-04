@@ -9,10 +9,19 @@ var global = {
 
 app.config(function($routeProvider) {
 	$routeProvider
-		.when('/',{
-			templateUrl:'./components/article.html',
-			controller:'comments-controller',
-			title:'Login | SignUp',
+		.when('/', {
+			templateUrl: './components/article.html',
+			controller: 'comments-controller',
+			title: 'Article | Discuss',
+		})
+		.when('/questions', {
+			templateUrl: './components/article.html',
+			controller: 'comments-controller',
+			title: 'About',
+		})
+		.when('/contact', {
+			templateUrl: './components/contact.html',
+			title: 'Contact Info',
 		});
 });
 
@@ -20,7 +29,6 @@ app.controller('comments-controller', function($scope,$location,$rootScope,$http
 	$scope.comment = '';
 	$scope.name = '';
 	$scope.submitComment = function() {
-		console.log('comment is ', $scope.comment, ' ', $scope.name);
 		if ($scope.comment.length !== 0 && $scope.name.length !== 0) {
 			let date = new Date();
 			let time = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear();
@@ -39,6 +47,8 @@ app.controller('comments-controller', function($scope,$location,$rootScope,$http
 					return b['id']-a['id'];
 				});
 				$scope.comments = res;
+				$scope.comment = '';
+				$scope.name = '';
 			});
 		} else {
 			alert('Name or Comment field is empty.');

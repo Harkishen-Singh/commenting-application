@@ -52,7 +52,6 @@ app.post('/upvote-comment', (req, res) => {
 	let id = req.body.id;
 	let dataDB = db.getData('/comments/' + String(id));
 	dataDB['upvotes'] = parseInt(dataDB['upvotes']) + 1;
-	db.delete('/comments/' + String(id));
 	db.push('/comments/' + String(id), dataDB);
 	dataDB = db.getData('/comments');
 	let arr = [];
@@ -66,7 +65,6 @@ app.post('/downvote-comment', (req, res) => {
 	let id = req.body.id;
 	let dataDB = db.getData('/comments/' + String(id));
 	dataDB['downvotes'] = parseInt(dataDB['downvotes']) + 1;
-	db.delete('/comments/' + String(id));
 	db.push('/comments/' + String(id), dataDB);
 	dataDB = db.getData('/comments');
 	let arr = [];

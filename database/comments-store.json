@@ -1,52 +1,28 @@
 {
     "comments": {
         "1": {
-            "name": "harkishen",
-            "message": "what a blog",
+            "name": "Harkishen Singh",
+            "message": "This is a really interesting blog. Thanks",
             "id": 1,
-            "upvotes": 5,
-            "downvotes": 1,
-            "time": "1:15:30 4/9/2019"
+            "upvotes": 10,
+            "downvotes": 5,
+            "time": "13:15:21 4/9/2019"
         },
         "2": {
-            "name": "harkishen",
-            "message": "what a blog",
+            "name": "C. Anirudh",
+            "message": "Good Job guys!",
             "id": 2,
             "upvotes": 11,
             "downvotes": 1,
-            "time": "1:15:37 4/9/2019"
+            "time": "13:15:40 4/9/2019"
         },
         "3": {
-            "name": "Muskan Khdeia",
-            "message": "omdfuhdui fgs udfhiud hfgijdfhgiu fh",
+            "name": "Priya Trikey",
+            "message": "How comfortable are you with C  ? I dont feel as such!",
             "id": 3,
-            "upvotes": 4,
-            "downvotes": 3,
-            "time": "1:31:15 4/9/2019"
-        },
-        "4": {
-            "name": "Subham Mishra",
-            "message": "this blog is really good. from where did u get this idea?",
-            "id": 4,
-            "upvotes": 0,
-            "downvotes": 0,
-            "time": "2:14:49 4/9/2019"
-        },
-        "5": {
-            "name": "Subham Kumar Panda",
-            "message": "Sanitizer for undefined behavior within code, and other sanitizers. The Linux kernel has been exposed to this as well as other open-source projects while their newest sanitizer is KCSAN and focused as a K",
-            "id": 5,
-            "upvotes": 2,
-            "downvotes": 3,
-            "time": "2:15:6 4/9/2019"
-        },
-        "6": {
-            "name": "Harkishen Singh",
-            "message": "One of the contributions Google is working on for the upstream Linux kernel is a new \"sanitizer\". Over the years Google has worked on AddressSanitizer for finding memory corruption bugs, UndefinedBehaviorSanitizer for undefined behavior within code, and other sanitizers. The Linux kernel has been exposed to this as well as other open-source projects while their newest sanitizer is KCSAN and focused as a Kernel Concurrency Sanitizer. The Kernel Concurrency Sanitizer (KCSAN) is focused on discovering data-race issues within the kernel code. This dynamic data-race detector is an alternative to the Kernel Thread Sanitizer. In their testing just last month, in two days they found over 300 unique data race conditions within the mainline kernel. There was a recent discussion about the Kernel Concurrency Sanitizer on the LKML. For those wanting to learn more, the code at least for now is being hosted on GitHub.",
-            "id": 6,
-            "upvotes": 12,
-            "downvotes": 2,
-            "time": "2:20:7 4/9/2019"
+            "upvotes": 5,
+            "downvotes": 21,
+            "time": "13:16:24 4/9/2019"
         }
     }
 }
