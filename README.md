@@ -18,5 +18,6 @@ Pre-requisite:
 Running:
 
 Navigate to the root of the project and type the following commands serially
-1. To start the back-end service, type `npm run server` in your terminal
-2. To start the front-end, type `npm start` in your terminal
+1. Install dependencies, type `npm install` in your terminal
+2. To start the back-end service, type `npm run server` in your terminal
+3. To start the front-end, type `npm start` in your terminal
