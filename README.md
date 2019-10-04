@@ -6,7 +6,8 @@ A simple commenting application which is capable enough to capture the upvotes a
 2. AngularJS for front-end server via `http-server`
 3. Node-JSON-db as a quick file-based database
 
-**[Explanatory Video](https://drive.google.com/file/d/1gY83XzjqFD1CejW_P4wP0J2RS9s-as_3/view)**
+**Explanatory Video** _(click to view)_
+**[![Explanatory Video](https://raw.githubusercontent.com/Harkishen-Singh/commenting-application/master/example.png)](https://drive.google.com/file/d/1gY83XzjqFD1CejW_P4wP0J2RS9s-as_3/view)**
 
 ### Installation
 
