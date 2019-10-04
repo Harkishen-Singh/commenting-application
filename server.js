@@ -28,10 +28,22 @@ app.get('/', (_, res) => {
 app.post('/post-comment', (req, res) => {
 	let cmt = req.body.comment,
 		time = req.body.time,
-		name = req.body.name;
-	let dataDB = db.getData('/comments'),
+		name = req.body.name,
+		dataDB,
+		len;
+	// incase the "comments" field is missing
+	if (Object.keys(db.getData('/')).length !== 0) {
+		dataDB = db.getData('/comments');
 		len = Object.keys(dataDB).length;
-
+	} else {
+		let temp = {
+			'comments': {}
+		};
+		db.push('/', temp);
+		dataDB = db.getData('/comments');
+		len = Object.keys(dataDB).length;
+	}
+	
 	db.push('/comments/' + String(len + 1), {
 		'name': name,
 		'message': cmt,
